@@ -9,7 +9,8 @@
 - 支持丰富且灵活的 `loaders` 和 `plugins`
 - 支持 `alias`
 - 支持 sass、less
-- 代码压缩
+- 支持 async await
+- 支持代码压缩
 - 等等...
 
 
