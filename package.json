@@ -1,6 +1,8 @@
 {
     "name": "mini-application-webpack-plugin",
     "description": "小程序 Webpack 插件, webpack plugin for mini-program",
+    "version": "0.0.0",
+    "main": "lib/index.js",
     "keywords": [
         "wxapp",
         "mini-program",
@@ -11,7 +13,6 @@
         "webpack-plugin",
         "plugin"
     ],
-    "version": "0.0.0",
     "repository": {
       "type": "git",
       "url": "https://github.com/zhengjiaqi/mini-application-webpack-plugin"
@@ -21,6 +22,5 @@
     "bugs": {
       "url": "https://github.com/zhengjiaqi/mini-application-webpack-plugin/issues"
     },
-    "homepage": "https://github.com/zhengjiaqi/mini-application-webpack-plugin",
-    "main": "lib/index.js"
+    "homepage": "https://github.com/zhengjiaqi/mini-application-webpack-plugin"
   }

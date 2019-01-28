@@ -42,7 +42,7 @@ npm install mini-application-webpack-plugin --save-dev
 
 - [file-loader](https://github.com/webpack-contrib/file-loader): 用于输出 `*.json`，`*.wxss`，`*.jpg` 之类的文件
 - [css-loader](https://github.com/webpack-contrib/css-loader): 使 `webpack` 能编译或处理 `*.wxss` 上引用的文件
-- [wxml-loader](https://github.com/Cap32/wxml-loader): 使 `webpack` 能编译或处理 `*.wxml` 上引用的文件
+- [wxml-miniapp-loader](https://github.com/zhengjiaqi/wxml-miniapp-loader): 使 `webpack` 能编译或处理 `*.wxml` 上引用的文件
 
 开发者也可以根据自身需求和习惯，使用 `sass-loader` 之类的 `loader`。
 
@@ -57,7 +57,7 @@ npm install mini-application-webpack-plugin --save-dev
 webpack.config.babel.js
 
 ```js
-import MiniApplicationWebpackPlugin from 'wxapp-webpack-plugin';
+import MiniApplicationWebpackPlugin from 'mini-application-webpack-plugin';
 export default {
   // ...configs,
   plugins: [
@@ -78,17 +78,17 @@ export default {
 
 #### `Targets`
 
-Webpack target 值，目前有 `Targets.Wechat` 和 `Targets.Alipay`，如果不配置，webpack target 将会自动设为 `Targets.Wechat`。如果需要开发支付宝小程序，则改为 `Targets.Alipay`。开发者也可以通过 `process.env.TARGET` 之类的配置来动态输出。
+Webpack target 值，目前有 `Targets.Wx` 和 `Targets.Swan`，如果不配置，webpack target 将会自动设为 `Targets.Wx`。如果需要开发百度智能小程序，则改为 `Targets.Swan`。开发者也可以通过 `process.env.TARGET` 之类的配置来动态输出。
 
 ###### 示例
 
 webpack.config.babel.js
 
 ```js
-import WXAppWebpackPlugin, { Targets } from 'mini-application-webpack-plugin';
+import MiniApplicationWebpackPlugin, { Targets } from 'mini-application-webpack-plugin';
 export default {
   // ...configs,
-  target: Targets[process.env.TARGET || 'WX'],
+  target: Targets[process.env.TARGET || 'Wx'],
 };
 ```
 
