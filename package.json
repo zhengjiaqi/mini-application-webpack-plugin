@@ -1,26 +1,44 @@
 {
-    "name": "mini-application-webpack-plugin",
-    "description": "小程序 Webpack 插件, webpack plugin for mini-program",
-    "version": "0.0.0",
-    "main": "lib/index.js",
-    "keywords": [
-        "wxapp",
-        "mini-program",
-        "mini-app",
-        "mini-application",
-        "miniapp",
-        "webpack",
-        "webpack-plugin",
-        "plugin"
-    ],
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/zhengjiaqi/mini-application-webpack-plugin"
-    },
-    "author": "zhengjiaqi <971682460@qq.com>",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/zhengjiaqi/mini-application-webpack-plugin/issues"
-    },
-    "homepage": "https://github.com/zhengjiaqi/mini-application-webpack-plugin"
+  "name": "mini-application-webpack-plugin",
+  "description": "小程序 Webpack 插件, webpack plugin for mini-program",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest test",
+    "build": "babel src -d dist"
+  },
+  "files": [
+    "dist",
+    "*.md"
+  ],
+  "keywords": [
+    "wxapp",
+    "mini-program",
+    "mini-app",
+    "mini-application",
+    "miniapp",
+    "webpack",
+    "webpack-plugin",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhengjiaqi/mini-application-webpack-plugin"
+  },
+  "author": "zhengjiaqi <971682460@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhengjiaqi/mini-application-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/zhengjiaqi/mini-application-webpack-plugin",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "jest": "^24.0.0"
   }
+}
